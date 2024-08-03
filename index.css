@@ -1,0 +1,472 @@
+@font-face {
+    font-family: 'igletsregular';
+    src: url('iglets_1-webfont.woff2') format('woff2'),
+         url('iglets_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_pro_displaylight';
+    src: url('sf-pro-display-light-webfont.woff2') format('woff2'),
+         url('sf-pro-display-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+body {
+    font-family: 'Iglets';
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 15px;
+    background-color: white;
+}
+
+header {
+    background-color: #E2E2E2;
+}
+
+.invitation {
+    padding-top: 60px;
+    background-color: #E2E2E2;
+    border-radius: 0 0 80px 80px;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 200;
+}
+
+.invitation__date {
+    font-size: 24px;
+}
+
+.invitation__info {
+    position: absolute;
+    top: 60px;
+    left: 44%;
+    transform: translateX(-45%);
+    color: #000;
+    text-align: center;
+    z-index: 3;
+    width: 100%;
+    text-align: end;
+    max-width: 338px;
+}
+
+.invitation__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.invitation__image img.image-1,
+.invitation__image img.image-2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: inherit;
+}
+
+.invitation__image img.image-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -47%);
+    z-index: 2;
+}
+
+
+.guest__invitation {
+    margin: 0px 18px 43px;
+}
+
+.guest__title {
+    margin-bottom: 18px;
+}
+
+.guest__info {
+    font-family: 'SF Pro Dispay';
+    font-weight: 200;
+    text-align: left;
+}
+
+.program {
+    padding: 50px 0px;
+    background-image: url('./image/IMG_9680\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #FFFFFF;
+
+}
+
+.program__title {
+    margin-bottom: 37px;
+    font-size: 33px;
+    font-weight: 100;
+}
+
+.program__time {
+    margin-bottom: 86px;
+}
+
+.program__time:last-child {
+    margin: 0;
+}
+
+.time {
+    margin-bottom: 5px;
+    font-size: 36px;
+}
+
+.schedule {
+    font-family: 'SF Pro Dispay';
+}
+
+.space {
+    background-color: #090909;
+    padding: 40px 0px 95px 0px;
+    color: #FFFFFF;
+    border-radius: 0 0 80px 80px;
+}
+
+.space__title {
+    font-size: 36px;
+    font-weight: 200;
+    margin-bottom: 52px;
+}
+
+.space__info {
+    font-family: 'Arial';
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.space__info {
+    margin: 0;
+}
+
+.restaurant {
+    padding: 100px 0 73px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.restaurant__title {
+    /* font-family: 'SF Pro Display'; */
+    font-family: 'Arial';
+    font-weight: 200;
+    margin-bottom: 17px;
+}
+
+.restaurant__image {
+    width: 100%;
+    height: 100%; /* Убедитесь, что высота блока задана */
+    overflow: hidden; /* Если изображение больше блока, оно не будет выходить за его границы */
+    margin-bottom: 30px;
+}
+
+.restaurant__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обеспечивает, что изображение покрывает весь контейнер без искажения */
+}
+
+.restaurant__button {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Arial';
+    box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+}
+
+.restaurant__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(5%, -6%); */
+    transform: translate(-5%, -7%) rotate(5deg) scale(1.1);;
+    /* width: 100px; Начальный размер иконки */
+    height: auto; 
+    z-index: 2;
+}
+
+
+.dress-code__title {
+    font-size: 36px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.dress-code__info {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    max-width: 320px;
+    margin-bottom: 30px;
+}
+
+.dress-code__icon {
+    margin-bottom: 35px;
+}
+
+.dress-code__icon img {
+    max-width: 100%; /* Ограничивает максимальную ширину изображения размером блока */
+    height: auto; /* Сохраняет пропорции изображения */
+}
+
+.dress-code__image {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 37px;
+}
+
+.dress-code__image img {
+    max-width: 100%; /* Ограничивает максимальную ширину изображения размером блока */
+    height: auto; /* Сохраняет пропорции изображения */
+}
+
+.details__title {
+    font-size: 36px;
+    font-weight: 200;
+    margin-bottom: 18px;
+}
+
+.details__text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 49px;
+}
+
+.invitation__footer {
+    font-size: 36px;
+    font-weight: 200;
+}
+
+.restaurant__icon {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Медиазапросы для более широких экранов */
+
+@media (min-width: 394px) {
+    .container {
+        max-width: 90%;
+        margin: 0 auto; /* Center align container */
+    }
+
+    .invitation__info {
+        font-size: 18px;
+    }
+
+    .program__title {
+        font-size: 28px;
+    }
+
+    .time {
+        font-size: 28px;
+    }
+
+    .schedule {
+        font-size: 16px;
+    }
+
+    .space__title {
+        font-size: 28px;
+    }
+
+    .space__info {
+        font-size: 16px;
+    }
+
+    .restaurant__title {
+        font-size: 22px;
+    }
+
+    .dress-code__title {
+        font-size: 28px;
+    }
+
+    .details__title {
+        font-size: 28px;
+    }
+
+    .invitation__footer {
+        font-size: 28px;
+    }
+
+    .restaurant__icon {
+        transform: translate(-1%, -7%) rotate(5deg) scale(1);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .invitation__info {
+        font-size: 20px;
+    }
+
+    .program__title {
+        font-size: 30px;
+    }
+
+    .time {
+        font-size: 30px;
+    }
+
+    .schedule {
+        font-size: 18px;
+    }
+
+    .space__title {
+        font-size: 30px;
+    }
+
+    .space__info {
+        font-size: 18px;
+    }
+
+    .restaurant__title {
+        font-size: 24px;
+    }
+
+    .dress-code__title {
+        font-size: 30px;
+    }
+
+    .details__title {
+        font-size: 30px;
+    }
+
+    .invitation__footer {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 70%;
+    }
+
+    .invitation__info {
+        font-size: 22px;
+    }
+
+    .program__title {
+        font-size: 33px;
+    }
+
+    .time {
+        font-size: 33px;
+    }
+
+    .schedule {
+        font-size: 20px;
+    }
+
+    .space__title {
+        font-size: 33px;
+    }
+
+    .space__info {
+        font-size: 20px;
+    }
+
+    .restaurant__title {
+        font-size: 26px;
+    }
+
+    .dress-code__title {
+        font-size: 33px;
+    }
+
+    .details__title {
+        font-size: 33px;
+    }
+
+    .invitation__footer {
+        font-size: 33px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .invitation__info {
+        font-size: 24px;
+    }
+
+    .program__title {
+        font-size: 36px;
+    }
+
+    .time {
+        font-size: 36px;
+    }
+
+    .schedule {
+        font-size: 22px;
+    }
+
+    .space__title {
+        font-size: 36px;
+    }
+
+    .space__info {
+        font-size: 22px;
+    }
+
+    .restaurant__title {
+        font-size: 28px;
+    }
+
+    .dress-code__title {
+        font-size: 36px;
+    }
+
+    .details__title {
+        font-size: 36px;
+    }
+
+    .invitation__footer {
+        font-size: 36px;
+    }
+}
