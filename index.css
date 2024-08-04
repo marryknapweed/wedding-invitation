@@ -1,33 +1,15 @@
-@font-face {
-    font-family: 'igletsregular';
-    src: url('iglets_1-webfont.woff2') format('woff2'),
-    url('iglets_1-webfont.woff') format('woff'),
-    url('iglets_1-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'sf_pro_displaylight';
-    src: url('sf-pro-display-light-webfont.woff2') format('woff2'),
-         url('sf-pro-display-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
 
 body {
-    font-family: 'Iglets';
+    font-family: 'Oranienbaum';
     text-align: center;
     color: #333;
     margin: 0;
@@ -44,33 +26,37 @@ header {
     background-color: #E2E2E2;
 }
 
-.invitation {
-    padding-top: 60px;
-    background-color: #E2E2E2;
-    border-radius: 0 0 80px 80px;
-    margin-bottom: 28px;
-    position: relative;
+.amp {
+    font-size: 24px;
 }
 
 h1 {
     font-size: 34px;
-    font-weight: 200;
+    font-family: 'Oranienbaum';
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
 .invitation__date {
     font-size: 24px;
+    color: #FFFFFF;
 }
 
-.invitation__info {
+.invitation__title {
+    text-align: start;
+}
+
+.invitation__title {
     position: absolute;
     top: 60px;
     left: 44%;
-    transform: translateX(-45%);
+    transform: translateX(-40%);
     color: #000;
     text-align: center;
     z-index: 3;
     width: 100%;
-    text-align: end;
+    text-align: start;
     max-width: 338px;
 }
 
@@ -87,7 +73,6 @@ h1 {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: inherit;
 }
 
 .invitation__image img.image-2 {
@@ -100,7 +85,7 @@ h1 {
 
 
 .guest__invitation {
-    margin: 0px 18px 43px;
+    margin: 40px 0 43px;
 }
 
 .guest__title {
@@ -108,9 +93,11 @@ h1 {
 }
 
 .guest__info {
-    font-family: 'SF Pro Dispay';
+    font-family: 'Open Sans';
     font-weight: 200;
+    font-size: 14px;
     text-align: left;
+    color: #000000;
 }
 
 .program {
@@ -125,9 +112,10 @@ h1 {
 }
 
 .program__title {
+    text-transform: uppercase;
     margin-bottom: 37px;
-    font-size: 33px;
-    font-weight: 100;
+    font-size: 31px;
+    font-weight: 400;
 }
 
 .program__time {
@@ -144,7 +132,8 @@ h1 {
 }
 
 .schedule {
-    font-family: 'SF Pro Dispay';
+    font-family: 'Open Sans';
+    font-weight: 200;
 }
 
 .space {
@@ -161,7 +150,7 @@ h1 {
 }
 
 .space__info {
-    font-family: 'Arial';
+    font-family: 'Open Sans';
     font-weight: 200;
     font-size: 16px;
     line-height: 30px;
@@ -179,8 +168,9 @@ h1 {
 }
 
 .restaurant__title {
-    font-family: 'Arial';
-    font-weight: 200;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
     margin-bottom: 17px;
 }
 
@@ -203,7 +193,8 @@ h1 {
     color: #000000;
     border: none;
     border-radius: 50px;
-    font-family: 'Arial';
+    font-family: 'Open Sans';
+    font-size: 15px;
     box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     z-index: 10;
@@ -230,9 +221,9 @@ h1 {
 
 .dress-code__info {
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 200;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
     max-width: 320px;
     margin-bottom: 30px;
 }
@@ -265,13 +256,16 @@ h1 {
 }
 
 .details__text {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
     margin-bottom: 49px;
 }
 
 .invitation__footer {
     font-size: 36px;
     font-weight: 200;
+    padding-bottom: 50px;
 }
 
 .restaurant__icon {
